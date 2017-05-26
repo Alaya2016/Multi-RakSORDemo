@@ -30,11 +30,11 @@ public class MRakSORDemo {
 	 * </br>
 	 *  
 	 * @param args <br/>
-	 * -ontopath: path to the ontology file (required) <br/>
-	 * -modelfilepath: path to file having the serialized MultiRakSOR predictive model (required)<br/>
-	 * -evalpath: path to the directory where the output file will be saved (optional). The output is an excel file recording the computed values.</br>
+	 * <strong>-ontopath </strong>: path to the ontology file (required) <br/>
+	 *<strong>-modelfilepath </strong>: path to file having the serialized MultiRakSOR predictive model (required)<br/>
+	 * <strong>-evalpath </strong>: path to the directory where the output file will be saved (optional). The output is an excel file recording the computed values.</br>
 	 * 
-	 * e.g, You can use the MultiRakSOR model generated for ISWC 2017 paper <br/>
+	 * e.g, You can use the MultiRakSOR model generated for ISWC 2017 paper. NB. The zip containing the model must first be unzip. <br/>
 	 * java -cp <jar_name.jar:lib/*> MRakSORDemo -ontopath ./ontologies/dpo-non-classified.owl -modelfilepath ./MultiRakSOR_Data_ISWC2017/Model/MultiRakSOR_ISWC2017.model<br/>
 	 * @throws Exception 
 	 */

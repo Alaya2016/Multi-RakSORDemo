@@ -11,8 +11,8 @@ import com.univ.raksor.services.ranking.multilabel.MultiRakSORPredictionManager;
 
 /**
  * 
- * This class shows how to assess the quality of the prediction (rank, relevance) produced by a MultiRakSOR model.
- * The example reproduces the results reported in the ISWC 2017 paper. 
+ * This class shows how to assess the quality of the predictions (rank, relevance) produced by a MultiRakSOR model.</br>
+ * The example reproduces the results reported in the ISWC 2017 paper. </br>
  *
  * @author Nourhene ALAYA (n.alaya@iut.univ-paris8.fr)
  * @version 1.0.0
@@ -72,7 +72,7 @@ public class MRakSOREvaluationDemo {
 	 * -nbrTargets: this option indicates the number of reasoners under examination (required).</br> It should be the same number of reasoners as in the predictive model and the test data. </br>
 	 * -outputDir: path to the directory which includes the test data file and the predictive mode (required) <br/>
 	 * 
-	 * e.g, You can use the test data generated for ISWC 2017 paper <br/>
+	 * e.g, You can use the test data generated for ISWC 2017 paper and the predictive model. <br/> First unzip the file containing the model. </br>
 	 * java -cp <jar_name.jar:lib/*> MRakSOREvaluationDemo -inputDir ./MultiRakSOR_Data_ISWC2017/inputData/ -modelfilepath ./MultiRakSOR_Data_ISWC2017/Model/MultiRakSOR_ISWC2017.model -nbrTargets 10
 	 * 
 	 * @throws Exception 
@@ -89,7 +89,7 @@ public class MRakSOREvaluationDemo {
         }
 		
         if(!args[0].equals("-inputDir")) {
-            System.err.println("Erro: the path to the test data must be set up (-inputDir).\n");         
+            System.err.println("Error: the path to the test data must be set up (-inputDir).\n");         
             System.exit(0);
         }
         
